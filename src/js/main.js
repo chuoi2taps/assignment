@@ -21,8 +21,8 @@ function showUser(users) {
                 <a href="" class="border border-1 border-red-600 inline-block rounded p-2 bg-[#FF6464] text-white font-bold hover:underline">Download Resume</a>
               </div>
             </div>
-            <div class="md:col-span-1 order-1 md:order-2">
-              <a href=""><img src="${user.img}" width="243px" height="243px" class="mx-auto md:ml-auto md:mr-0" alt=""></a>
+            <div class="md:col-span-1 order-1 md:order-2 ">
+              <a href=""><img src="${user.img}" width="243px" height="243px" class="mx-auto hover:drop-shadow-2xl transition duration-150 ease-in-out md:ml-auto md:mr-0" alt=""></a>
             </div>
           </div>
         `;
