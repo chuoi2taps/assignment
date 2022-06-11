@@ -1,5 +1,5 @@
 export const userInformation = [
-    {name: "Thiên",age: 19 ,address: "Nghe An Province", description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.", img: "src/images/Ellipse 1@2x.png"}
+    {name: "Nguyen Nhat Thien",age: 19 ,address: "Nghe An Province", description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.", img:"src/images/Ellipse 1@2x.png"}
 ];
 export const recentPost =[
     {id: 1, name: "Making a design system from scratch", date: "12 Feb 2020", tag:"Design, Pattern", description:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},

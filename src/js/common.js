@@ -1,6 +1,7 @@
 export function render(element, content) {
-    // nếu tìm được element thì hiển thị
-    if (element) {
-        document.getElementById(element).innerHTML = content;
+    const elementId = document.getElementById(element)
+    // nếu có giá trị thì hiển thị
+    if (!elementId) return; {
+        elementId.innerHTML = content;
     }
 }

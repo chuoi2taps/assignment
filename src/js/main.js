@@ -15,8 +15,10 @@ function showUser(users) {
         <div class="grid md:grid-cols-3">
             <div class="md:col-span-2 order-2 md:order-1 text-center md:text-left">
               <h2 class=" text-4xl font-bold md:text-5xl md:leading-[60px]">Hi, I am ${user.name},
-                <br> Creative Technologist</h2>
-              <p class="text-base pt-6">${user.description}</p>
+                <br>Creative Technologist</h2>
+                <h2 class=" text-2xl font-bold md:text-3xl md:leading-[60px] py-2">I am ${user.age},
+                I come from ${user.address}</h2>
+              <p class="text-base pt-3">${user.description}</p>
               <div class="py-6">
                 <a href="" class="border border-1 border-red-600 inline-block rounded p-2 bg-[#FF6464] text-white font-bold hover:underline">Download Resume</a>
               </div>
