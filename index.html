@@ -11,22 +11,26 @@
 
 <body>
   <header>
-    <div class="max-w-7xl mx-auto m-3">
-      <ul class="md:flex justify-end space-x-8 hidden order-2 md:order-1">
-        <li><a href="work.html" class="font-bold hover:text-[#FF6464]">Works</a></li>
-        <li><a href="blog.html" class="font-bold hover:text-[#FF6464]">Blog</a></li>
-        <li><a href="index.html" class="font-bold hover:text-[#FF6464]">Contact</a></li>
-      </ul>
-    </div>
-    <div class="max-w-7xl mx-auto m-3">
-      <div class="flex justify-end md:hidden md:order-2 order-1">
-        <img src="src/svg/list.svg" alt="" width="60">
+    <div class="max-w-7xl mx-auto mt-4">
+      <div class="flex justify-end">
+        <div id="menu" class="block md:hidden m-2">
+          <img src="src/svg/list.svg" alt="">
+        </div>
+      </div>
+      <div class="menu-top">
+        <ul class="menu-res hidden md:block md:flex justify-end">
+          <li><a href="work.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Works</a>
+          </li>
+          <li><a href="blog.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Blog</a>
+          </li>
+          <li><a href="index.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Contact</a></li>
+        </ul>
       </div>
     </div>
   </header>
   <section class="information">
     <div class="max-w-7xl mx-auto my-16" id="user-information">
-      
+
     </div>
   </section>
   <section class="recent-posts">
@@ -48,7 +52,7 @@
       <div class="flex justify-center md:justify-between py-5">
         <h2 class="text-xl">Feature works</h2>
       </div>
-      <div id="feature-works"> 
+      <div id="feature-works">
 
       </div>
 
@@ -67,6 +71,16 @@
     </div>
   </footer>
   <script type="module" src="src/js/main.js"></script>
+
 </body>
+<script>
+  const menu = document.querySelector("#menu");
+  const menuRes = document.querySelector(".menu-res");
+  const menuTop = document.querySelector(".menu-top");
+  menu.addEventListener("click", () => {
+    menuRes.classList.toggle("hidden");
+    menuTop.classList.toggle("justify-end");
+  });
+</script>
 
 </html>

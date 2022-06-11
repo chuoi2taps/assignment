@@ -9,19 +9,23 @@
 </head>
 <body>
     <header>
-        <div class="max-w-7xl mx-auto m-3">
-            <ul class="md:flex justify-end space-x-8 hidden md:order-1 order-2">
-                <li><a href="blog.html" class="font-bold hover:text-[#FF6464]">Blog</a></li>
-                <li><a href="work.html" class="font-bold text-[#FF6464]">Works</a></li>
-                <li><a href="index.html" class="font-bold hover:text-[#FF6464]">Contact</a></li>
-            </ul>
-        </div>
-        <div class="max-w-5xl mx-auto m-3">
-            <div class="flex justify-end md:hidden md:order-2 order-1">
-                <img src="src/svg/list.svg" alt="" width="60">
+        <div class="max-w-7xl mx-auto mt-4">
+          <div class="flex justify-end">
+            <div id="menu" class="block md:hidden m-2">
+              <img src="src/svg/list.svg" alt="">
             </div>
+          </div>
+          <div class="menu-top">
+            <ul class="menu-res hidden md:block md:flex justify-end">
+              <li><a href="work.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Works</a>
+              </li>
+              <li><a href="blog.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Blog</a>
+              </li>
+              <li><a href="index.html" class="nav-link block text-base font-bold m-4 hover:text-[#FF6464]">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
     <section class="px-5">
         <div class="max-w-5xl mx-auto py-10" id="recent-detail">
 
@@ -40,4 +44,13 @@
     </footer>
     <script src="src/js/detailpost.js" type="module"></script>
 </body>
+<script>
+    const menu = document.querySelector("#menu");
+    const menuRes = document.querySelector(".menu-res");
+    const menuTop = document.querySelector(".menu-top");
+    menu.addEventListener("click", () => {
+      menuRes.classList.toggle("hidden");
+      menuTop.classList.toggle("justify-end");
+    });
+  </script>
 </html>
