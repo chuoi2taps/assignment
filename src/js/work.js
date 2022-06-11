@@ -7,6 +7,7 @@ function showFeature(features){
       for(let i = 0; i< features.length; i++){
         const feature = features[i];
         result += `
+        <div class="grid md:grid-cols-[246px,auto] gap-8 border-b py-8">
         <div>
             <a href ="/workdetail.html?id=${feature.id}"><img src="${feature.img}" width="246px" height="246px" class="rounded w-full" alt=""></a>
         </div>
@@ -19,6 +20,7 @@ function showFeature(features){
             <p class="text-[#21243D]">
             ${feature.description}
                 </p>
+            </div>
             </div>
         `
   }
