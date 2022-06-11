@@ -2,7 +2,6 @@ import { render } from "./common";
 import { blogPost } from "./data"
 
 const id = new URLSearchParams(window.location.search).get("id");
-
 const post = blogPost.find((item) => item.id == id);
 const result = `
 <div class="post border-b">
