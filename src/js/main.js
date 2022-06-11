@@ -40,8 +40,8 @@ function showPost(posts){
       const post = posts[i];
       result += `
       <div class="post border rounded border-white bg-white px-5 py-8"> 
-              <div class="mb-4"><a href="" class="text-4xl font-bold text-[#21243D] hover:underline">${post.name}</a></div>
-              <div class="mb-4 text-[#21243D]"><span class="mr-2">12 Feb 2020</span>|
+              <div class="mb-4"><a href="/detailpost.html?id=${post.id}" class="text-4xl font-bold text-[#21243D] hover:underline">${post.name}</a></div>
+              <div class="mb-4 text-[#21243D]"><span class="mr-2">${post.date}</span>|
               <span class="ml-2 ">${post.tag}</span></div>
               <p class="text-[#21243D]">${post.description}</p>
             </div>
