@@ -8,7 +8,7 @@ function showBlog(blogs){
         result += `
         <div class="post border-b">
                     <div class="my-4">
-                        <a href="" class="text-3xl text-[#21243D] font-bold">${blog.name}</a>
+                        <a href="" class="text-3xl text-[#21243D] font-bold hover:underline">${blog.name}</a>
                     </div>
                     <div class="my-4">
                         <span class="mr-2">${blog.date}</span>|

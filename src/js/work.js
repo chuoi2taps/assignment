@@ -12,7 +12,7 @@ function showFeature(features){
             <a href ="/workdetail.html?id=${feature.id}"><img src="${feature.img}" width="246px" height="246px" class="rounded w-full" alt=""></a>
         </div>
         <div>
-            <h3><a href="/workdetail.html?id=${feature.id}" class="text-[30px] text-[#21243D] font-bold">${feature.name}</a></h3>
+            <h3><a href="/workdetail.html?id=${feature.id}" class="text-[30px] text-[#21243D] font-bold hover:underline">${feature.name}</a></h3>
         <div class="flex space-x-4 items-center py-5">
             <span class="inline-block bg-[#21243D] py-1 px-2 font-bold text-white rounded-full">${feature.year}</span>
             <span class="text-[#8695A4]">${feature.cate}</span>
