@@ -2,12 +2,11 @@ import { render } from "./common";
 import { blogPost } from "./data"
 
 const id = new URLSearchParams(window.location.search).get("id");
-
 const post = blogPost.find((item) => item.id == id);
 const result = `
 <div class="post border-b">
 <div class="my-16">
-    <a href="" class="text-5xl text-[#21243D] font-bold hover:underline">${post.name}</a>
+    <a href="" class="text-5xl text-[#21243D] font-bold">${post.name}</a>
 </div>
 <div class="my-16">
     <span class="mr-2 text-2xl">${post.date}</span>|
